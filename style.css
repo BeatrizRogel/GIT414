@@ -1,4 +1,9 @@
-/* Global */
+/* CSS BY BEATRIZ ROGEL */
+
+/* IMPORTED FONTS */
+/* None */
+
+/* CSS RESET */
 
 *{
     margin:0;
@@ -6,34 +11,45 @@
     box-sizing:border-box;
 }
 
+/* ROOT VARIABLES */
+
+:root{
+    --maroon:#8C1D40;
+    --gold:#FFC627;
+    --dark:#333333;
+    --light:#f4f4f4;
+}
+
+/* GLOBAL STYLES */
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     line-height:1.6;
-    background:#f4f4f4;
+    background:var(--light);
 }
 
 header{
-    background:#8C1D40;
+    background:var(--maroon);
     color:white;
     padding:2rem;
     text-align:center;
 }
 
 nav{
-    background:#FFC627;
+    background:var(--gold);
     padding:1rem;
 }
 
 nav ul{
     display:flex;
-    list-style:none;
     justify-content:center;
     gap:2rem;
+    list-style:none;
 }
 
 nav a{
     text-decoration:none;
-    color:#000;
+    color:black;
     font-weight:bold;
 }
 
@@ -44,14 +60,14 @@ main{
 }
 
 footer{
-    background:#333;
+    background:var(--dark);
     color:white;
     text-align:center;
     padding:1rem;
     margin-top:3rem;
 }
 
-/* Medium */
+/* MEDIA QUERY (medium) */
 
 @media (min-width:600px){
 
@@ -61,7 +77,7 @@ footer{
 
 }
 
-/* Large */
+/* MEDIA QUERY (large) */
 
 @media (min-width:900px){
 
@@ -73,7 +89,7 @@ footer{
 
 }
 
-/* XL */
+/* MEDIA QUERY (xl) */
 
 @media (min-width:1200px){
 
